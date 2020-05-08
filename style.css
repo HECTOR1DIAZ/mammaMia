@@ -1,0 +1,317 @@
+/***************************Login*****************/
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+ 
+  /* Add padding to containers */
+  .container {
+    padding: 50px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(mexicanFood.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.info-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+
+
+}
+.recipe-panel {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 100px;
+    background-color: #f7f7f7ab;
+    
+}
+
+
+
+/**********************************************
+*** Panels
+**********************************************/
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.recipe-img {
+
+    margin-bottom: 30px;
+    background-image: url(birria.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50%;
+    box-shadow: 5px 5px 5px;
+    border-radius: 5px;
+
+}
+
+
+.recipe-description {
+    background-color: #EB4D4D;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #222;
+    border-radius: 10px;
+}
+
+.recipe-rating {
+    font-size: 30px;
+}
+
+.recipe {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+    border-radius: 10px;
+}
+
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 25px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+s {
+    color: rgb(255, 198, 74);
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    margin-top: -4px;
+    transition: margin 0.3s;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.btn-star { top: 45px;}
+.btn-translate { top: 600px;}
+.btn-save { top: 650px;}
+
+.dice {
+    border: solid yellow;
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+iframe {
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 25%;
+    box-shadow: 5px 5px 5px;
+}
+
+/**********************************************
+*** homepage
+**********************************************/
+
+.homepage-img {
+
+    background-image: url(birria.jpg);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    height: 50%;
+    /* box-shadow: 5px 5px 5px;
+    border-radius: 5px; */
+
+}
+
+
+.homepage-img2 {
+
+    background-image: url(Dan-Dan-Noodles-10.jpg);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    height: 50%;
+    /* box-shadow: 5px 5px 5px;
+    border-radius: 5px; */
+
+}
+
+.left-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    /* padding: 100px; */
+
+
+}
+.right-panel {
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding: 100px;
+    background-color: #f7f7f7ab;
+    
+}
