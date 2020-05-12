@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
       rel="stylesheet"
@@ -13,7 +16,6 @@
       type="text/css"
     />
 
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
 
     <link type="text/css" rel="stylesheet" href="style.css" />
@@ -35,7 +37,8 @@
           de borrego o chivo, nosotros recomendamos utilizar esta carne aunque
           en este platillo utilizamos carne de res que es mucho más fácil de
           conseguir y además tiene un sabor muy rico
-          <div class="recipe-rating">202<s class="ion-ios-star"></s></div>
+          <br>
+          <div class="recipe-rating" id='rating'>0</div><s class="ion-ios-star"></s>
         </div>
       </div>
 
@@ -74,12 +77,16 @@
 
         <button class="btn-star"><s class="ion-ios-star"></s>Mamma Mia!</button>
         <button class="btn-translate">
-          <i class="ion-ios-loop"></i>Translate
-        </button>
+          <i class="ion-ios-loop"></i> 
+        </button><div id="google_translate_element"></div>
+
         <button class="btn-save">
           <i class="ion-ios-download-outline"></i>Save
         </button>
       </div>
     </div>
+
+    <script src="app.js"></script>
+
   </body>
 </html>
